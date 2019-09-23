@@ -162,7 +162,7 @@ def player_numbers(team_name)
     if team_data[:team_name] == team_name
       team_data[:players].each do |player_data|
         binding.pry
-        jersey_numbers_array.push(player_data[:number])
+        jersey_numbers_array.push(player_data[1][:number])
       end
     end 
   end

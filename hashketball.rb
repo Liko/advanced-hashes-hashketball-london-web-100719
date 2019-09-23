@@ -259,7 +259,7 @@ def most_steals_scored
   
   game_hash.each do |home_or_away, team_data|
     team_data[:players].each do |player_name, player_data|
-      if player_data[:points] > highest_individual_score
+      if player_data[:steals] > highest_individual_score
         highest_scoring_player = player_name
         highest_individual_score = player_data[:points]
       end

@@ -122,27 +122,27 @@ end
 
 
 
-def num_points_scored(player_name)
-  game_hash.each do |home_or_away, team_data|
-    if team_data[:players].include?(player_name)
-      return team_data[:players][player_name][:points]
-    end
-  end
-  0
-end
-
-
 # def num_points_scored(player_name)
-#   score = []
 #   game_hash.each do |home_or_away, team_data|
-#     team_data[:players].each do |selected_name, stats|
-#       if player_name == selected_name
-#         return 999
-#       end
+#     if team_data[:players].include?(player_name)
+#       return team_data[:players][player_name][:points]
 #     end
 #   end
-#   score[0]
+#   0
 # end
+
+
+def num_points_scored(player_name)
+  score = []
+  game_hash.each do |home_or_away, team_data|
+    team_data[:players].each do |selected_name, stats|
+      if player_name == selected_name
+        return 999
+      end
+    end
+  end
+  score[0]
+end
 
 
 

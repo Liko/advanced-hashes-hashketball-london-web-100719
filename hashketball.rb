@@ -180,6 +180,9 @@ end
 
 def big_shoe_rebounds
   player_name = get_player_name_with_biggest_shoe()
+  
+  game_hash.each do |home_or_away, team_data|
+    team
 end 
 
 def get_player_name_with_biggest_shoe

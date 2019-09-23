@@ -124,7 +124,7 @@ def num_points_scored(player_name)
   score = []
   game_hash.each do |home_or_away, team_data|
     team_data[:players].each do |selected_name, stats|
-      if (player_name == selected_name)
+      if player_name == selected_name
         score.push(stats[:points])
       end
     end

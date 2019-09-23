@@ -201,7 +201,7 @@ def get_player_name_with_biggest_shoe
         num_rebounds = player_data[:rebounds]
       end
     end 
-    return biggest_shoe_player
+    return num_rebounds
   end
 end 
 

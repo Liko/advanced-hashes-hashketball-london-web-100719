@@ -196,6 +196,7 @@ def get_player_name_with_biggest_shoe
     team_data[:players].each do |player_name, player_data|
       if player_data[:shoe] > biggest_shoe_size
         biggest_shoe_player = player_name
+        biggest_shoe_size = player_data[:shoe]
       end
     end 
     return biggest_shoe_player

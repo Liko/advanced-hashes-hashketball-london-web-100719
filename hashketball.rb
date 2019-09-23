@@ -249,7 +249,24 @@ end
 
 def long_name_steals_a_ton?
   longest_name_player = player_with_longest_name
+  
+  most_steals
 end
+
+def most_steals_scored
+  highest_scoring_player = ""
+  highest_individual_score = 0 
+  
+  game_hash.each do |home_or_away, team_data|
+    team_data[:players].each do |player_name, player_data|
+      if player_data[:points] > highest_individual_score
+        highest_scoring_player = player_name
+        highest_individual_score = player_data[:points]
+      end
+    end  
+  end 
+  return highest_scoring_player
+end 
 
 
 

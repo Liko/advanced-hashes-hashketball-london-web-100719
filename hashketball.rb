@@ -136,7 +136,7 @@ def shoe_size(player_name)
       return team_data[:players][player_name][:shoe]
     end
   end
-  0
+  nil
 end
 
 def team_colors(team_name)

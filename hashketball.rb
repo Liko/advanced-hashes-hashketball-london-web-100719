@@ -161,7 +161,7 @@ def player_numbers(team_name)
   game_hash.each do |home_or_away, team_data|
     if team_data[:team_name] == team_name
       team_data[:players].each do |player_name, player_data|
-        jersey_numbers_array.push(player_data[1][:number])
+        jersey_numbers_array.push(player_data[:number])
       end
     end 
   end

@@ -154,7 +154,6 @@ def team_names
     team_names_array.push(team_data[:team_name])
   end 
   return team_names_array
-end
 end 
 
 

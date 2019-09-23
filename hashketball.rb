@@ -261,7 +261,7 @@ def most_steals_scored
     team_data[:players].each do |player_name, player_data|
       if player_data[:steals] > highest_individual_steals
         highest_steals_player = player_name
-        highest_individual_steals = player_data[:points]
+        highest_individual_steals = player_data[:steals]
       end
     end  
   end 

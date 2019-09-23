@@ -226,13 +226,11 @@ def winning_team
     if current_team_score > highest_team_score
       highest_team_score = current_team_score
       highest_team_name = current_team_name
-    
     end
       
     current_team_name = ""
     current_team_score = 0
   end 
-  
   return highest_team_name
 end 
       

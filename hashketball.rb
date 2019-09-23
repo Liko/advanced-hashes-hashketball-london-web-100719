@@ -267,11 +267,3 @@ def most_steals_scored
   end 
   return highest_steals_player
 end 
-
-
-
-
-
-
-
-

@@ -220,8 +220,12 @@ def winning_team
   game_hash.each do |home_or_away, team_data|
     current_team_name = team_data[:team_name]
     team_data[:players].each do |player_name, player_data|
-      
+      current_team_score += player_data[:points]
     end 
+    
+    if current_team_score > highest_team_score
+      highest_team_score = current_team_score
+      highest_team_name = current_team_name
   end 
       
 

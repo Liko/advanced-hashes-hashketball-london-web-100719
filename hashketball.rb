@@ -120,23 +120,23 @@ def game_hash
   }
 end 
 
-# def num_points_scored(player_name)
-#   #  player_name is passed in by rspecs
-#   players = get_players
-#   find_player(players, player_name)[:points]
-# end
+def num_points_scored(player_name)
+  #  player_name is passed in by rspecs
+  players = get_players
+  find_player(players, player_name)[:points]
+end
 
-# def get_players
-#   game_hash.map do |team_info|
-#     team_info[1][:players]
-#   end.flatten
-# end
+def get_players
+  game_hash.map do |team_info|
+    team_info[1][:players]
+  end.flatten
+end
 
-# def find_player(players, player_name)
-#   players.find do |player|
-#     player[:player_name]==player_name
-#   end
-# end
+def find_player(players, player_name)
+  players.find do |player|
+    player[:player_name]==player_name
+  end
+end
 
 # def num_points_scored(player_name)
 #   game_hash.each do |home_or_away, team_data|

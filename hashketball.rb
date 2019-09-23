@@ -195,7 +195,12 @@ def big_shoe_rebounds
   return num_rebounds
 end 
 
-
+def most_points_scored
+  highst_scoring_player = ""
+  highest_individual_score = 0 
+  
+  
+end 
 
   
 

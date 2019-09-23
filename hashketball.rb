@@ -190,6 +190,7 @@ def get_player_name_with_biggest_shoe
         biggest_shoe_player = player_name
       end
     end 
+    return biggest_shoe_player
   end
   
   

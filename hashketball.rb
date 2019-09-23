@@ -213,12 +213,11 @@ end
 def winning_team
   highest_team_name = ""
   highest_team_score = 0
-  
-  current_team_name = ""
-  current_team_score = 0
-  
+
   game_hash.each do |home_or_away, team_data|
     current_team_name = team_data[:team_name]
+    current_team_score = 0
+    
     team_data[:players].each do |player_name, player_data|
       current_team_score += player_data[:points]
     end 
@@ -227,9 +226,7 @@ def winning_team
       highest_team_score = current_team_score
       highest_team_name = current_team_name
     end
-      
-    current_team_name = ""
-    current_team_score = 0
+
   end 
   return highest_team_name
 end 

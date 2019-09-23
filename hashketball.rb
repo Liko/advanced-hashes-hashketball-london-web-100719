@@ -210,8 +210,16 @@ def most_points_scored
   return highest_scoring_player
 end 
 
+def winning_team
+  highest_team_name = ""
+  highest_team_score = 0
   
-
+  current_team_name = ""
+  current_team_score = 0
+  
+  game_hash.each do |home_or_away, team_data|
+    team_data[:players].each do |player_name, player_data|
+      
 
 
 

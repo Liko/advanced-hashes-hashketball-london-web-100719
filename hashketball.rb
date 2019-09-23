@@ -254,8 +254,8 @@ def long_name_steals_a_ton?
 end
 
 def most_steals_scored
-  highest_scoring_player = ""
-  highest_individual_score = 0 
+  highest_steals_player = ""
+  highest_individual_steals = 0 
   
   game_hash.each do |home_or_away, team_data|
     team_data[:players].each do |player_name, player_data|

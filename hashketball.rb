@@ -265,7 +265,7 @@ def most_steals_scored
       end
     end  
   end 
-  return highest_scoring_player
+  return highest_steals_player
 end 
 
 

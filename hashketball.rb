@@ -133,7 +133,7 @@ end
 def shoe_size(player_name)
   game_hash.each do |home_or_away, team_data|
     if team_data[:players].include?(player_name)
-      return team_data[:players][player_name][:points]
+      return team_data[:players][player_name][:shoe]
     end
   end
   0

@@ -183,7 +183,12 @@ def big_shoe_rebounds
 end 
 
 def get_player_name_with_biggest_shoe
-  biggest_shoe_player = nil 
+  biggest_shoe_player = 0
+  game_hash.each do |home_or_away, team_data|
+    team_data[:players].each do |player_name, player_data|
+      ?
+    end 
+  end
   
   
 end 

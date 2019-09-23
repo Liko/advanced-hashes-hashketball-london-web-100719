@@ -104,7 +104,7 @@ describe 'hashketball' do
       }
     }
 
-    let(:bismack_stats) {
+    let(:bismak_stats) {
       {
         :number => 0,
         :shoe => 16,

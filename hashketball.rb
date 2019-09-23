@@ -218,7 +218,11 @@ def winning_team
   current_team_score = 0
   
   game_hash.each do |home_or_away, team_data|
+    current_team_name = team_data[:team_name]
     team_data[:players].each do |player_name, player_data|
+      
+    end 
+  end 
       
 
 

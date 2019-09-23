@@ -129,7 +129,7 @@ def num_points_scored(player_name)
       # return team_data[:players][player_name][:points]
     end
   end
-  nil 
+  0
 end
 
 
